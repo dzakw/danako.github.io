@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login Page</title>
   <script src="https://kit.fontawesome.com/5fde2fdc76.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap">
@@ -32,6 +33,32 @@ h2 {
 .right-section {
   width: calc(100% * 7 / 12);
   background-color: #fff;
+}
+
+@media (max-width: 992px) {
+    .left-section {
+        width: 50%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .right-section {
+        width: 50%;
+    }
+}
+@media (max-width: 768px) {
+    .left-section {
+        width: 100%;
+    }
+    .right-section {
+        display: none;
+    }
+}
+@media (max-width: 576px) {
+    .left-section {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 70px;
+    }
 }
 
 .card {
