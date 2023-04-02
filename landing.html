@@ -249,47 +249,71 @@
 }
     
     /* Why Choose Us */   
-    .why-choose-us .card-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+    .why-choose-us {
+      display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+  background-image: url('why choose us.jpg');
+  background-size: cover;
+    }
+    
+    .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
 }
 
 .why-choose-us .card {
-  flex-basis: 30%;
-  max-width: 350px;
-  margin-bottom: 20px;
+  flex: 1 1 200px;
+  max-width: 300px;
+  height: 200px;
   background-color: #fff;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 20px;
 }
 
 .why-choose-us .card-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 .why-choose-us .card-icon {
-  flex-basis: 20%;
   font-size: 40px;
-  color: #f7941e;
+  color: #79C121;
   text-align: center;
 }
 
 .why-choose-us .card-title {
-  flex-basis: 70%;
   font-size: 24px;
   font-weight: bold;
-  margin-left: 20px;
+  margin-top: 10px;
   color: #333;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.why-choose-us .card-title span {
+  margin-left: 40px;
 }
 
 .why-choose-us .card-text {
   margin-top: 20px;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.5;
   text-align: left;
 }
@@ -316,7 +340,8 @@
 @media only screen and (max-width: 768px) {
 
   .why-choose-us .card {
-    flex-basis: 100%;
+    flex: 1 1 100%;
+    max-width: none;
   }
   .why-choose-us h2 {
     flex-direction: column;
@@ -478,22 +503,19 @@
       <div class="card-container">
         <div class="card">
           <div class="card-content">
-            <div class="card-icon"><i class="fas fa-rocket"></i></div>
-            <div class="card-title">Cepat</div>
+            <div class="card-title">Cepat<span class="card-icon"><i class="fas fa-rocket"></i></span></div>
             <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum, ipsum eu gravida tempus, ipsum lorem ullamcorper ligula, vel dignissim ante nibh vel odio. Praesent maximus aliquet justo.</div>
           </div>
         </div>
         <div class="card">
           <div class="card-content">
-            <div class="card-icon"><i class="fas fa-check"></i></div>
-            <div class="card-title">Tepat</div>
+            <div class="card-title">Tepat<span class="card-icon"><i class="fas fa-check"></i></span></div>
             <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum, ipsum eu gravida tempus, ipsum lorem ullamcorper ligula, vel dignissim ante nibh vel odio. Praesent maximus aliquet justo.</div>
           </div>
         </div>
         <div class="card">
           <div class="card-content">
-            <div class="card-icon"><i class="fas fa-bullseye"></i></div>
-            <div class="card-title">Berdampak</div>
+            <div class="card-title">Berdampak<span class="card-icon"><i class="fas fa-bullseye"></i></span></div>
             <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum, ipsum eu gravida tempus, ipsum lorem ullamcorper ligula, vel dignissim ante nibh vel odio. Praesent maximus aliquet justo.</div>
           </div>
         </div>
