@@ -64,6 +64,11 @@
   cursor: pointer;
 }
 
+.nav > .nav-links > button:hover {
+  background-color: #456722;
+  color: #fff;
+}
+
 .nav > .nav-links > button > i {
   margin-right: 10px;
 }
@@ -214,34 +219,121 @@
 }
 
 @media (max-width: 768px) {
+  @media (max-width: 768px) {
+  .banner-buttons {
+    flex-direction: column;
+  }
+
   .banner-button {
     font-size: 0.8em;
     padding: 0.5em 0.8em;
     margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    width: 15em;
+    height: 3em;
+  }
+
+  .banner h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+
+  .banner p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    padding: 0 10px;
   }
 }
+
+}
     
-    /* Why Choose Us */
-    .why-choose-us {
-      height: 360px;
-      background-color: #eee;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    
-    .why-choose-us h2 {
-      font-size: 48px;
-      margin-bottom: 30px;
-    }
-    
-    .why-choose-us p {
-      font-size: 18px;
-      max-width: 600px;
-      margin-bottom: 50px;
-    }
+    /* Why Choose Us */   
+    .why-choose-us .card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.why-choose-us .card {
+  flex-basis: 30%;
+  max-width: 350px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.why-choose-us .card-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+}
+
+.why-choose-us .card-icon {
+  flex-basis: 20%;
+  font-size: 40px;
+  color: #f7941e;
+  text-align: center;
+}
+
+.why-choose-us .card-title {
+  flex-basis: 70%;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+  color: #333;
+}
+
+.why-choose-us .card-text {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.why-choose-us h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.why-choose-us img {
+  display: inline-block;
+  max-width: 4em;
+  max-height: auto;
+  vertical-align: middle;
+  margin-left: 10px; /* adjust the margin as necessary */
+  margin-bottom: 10px
+}
+
+@media only screen and (max-width: 768px) {
+
+  .why-choose-us .card {
+    flex-basis: 100%;
+  }
+  .why-choose-us h2 {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .why-choose-us img {
+    margin-left: 0;
+  }
+  .why-choose-us .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+
     
     /* Flagship Program */
     .flagship-program {
@@ -382,9 +474,34 @@
   
     <!-- Why Choose Us -->
     <div class="why-choose-us">
-      <h2>Why Choose Us?</h2>
-      <p>We offer high-quality products and services that are tailored to your needs. Our team of experts is dedicated to providing the best possible solutions for your business.</p>
+      <h2>Kenapa pilih <span class="logo"><img src="danako.svg" alt="logo">?</span></h2>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-icon"><i class="fas fa-rocket"></i></div>
+            <div class="card-title">Cepat</div>
+            <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum, ipsum eu gravida tempus, ipsum lorem ullamcorper ligula, vel dignissim ante nibh vel odio. Praesent maximus aliquet justo.</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-icon"><i class="fas fa-check"></i></div>
+            <div class="card-title">Tepat</div>
+            <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum, ipsum eu gravida tempus, ipsum lorem ullamcorper ligula, vel dignissim ante nibh vel odio. Praesent maximus aliquet justo.</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-icon"><i class="fas fa-bullseye"></i></div>
+            <div class="card-title">Berdampak</div>
+            <div class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus bibendum, ipsum eu gravida tempus, ipsum lorem ullamcorper ligula, vel dignissim ante nibh vel odio. Praesent maximus aliquet justo.</div>
+          </div>
+        </div>
+      </div>
     </div>
+    
+    
+    
   
     <!-- Flagship Program -->
     <div class="flagship-program">
