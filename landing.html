@@ -361,26 +361,119 @@
 
     
     /* Flagship Program */
-    .flagship-program {
-      height: 745px;
-      background-color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    
-    .flagship-program h2 {
-      font-size: 48px;
-      margin-bottom: 30px;
-    }
-    
-    .flagship-program p {
-      font-size: 18px;
-      max-width: 600px;
-      margin-bottom: 50px;
-    }
+    .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 240px;
+}
+
+
+.campaign-card {
+  width: 300px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 5px;
+}
+
+.campaign-image {
+  width: 100%;
+  height: 50%;
+  position: relative;
+}
+
+.campaign-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.campaign-info {
+  width: 100%;
+  height: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.campaign-datetime {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.campaign-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.campaign-description {
+  font-size: 16px;
+  margin-bottom: 10px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.campaign-progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.progress-bar {
+  height: 20px;
+  width: 100%;
+  background-color: #e6e6e6;
+  border-radius: 10px;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #0CBF65;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.campaign-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+}
+
+
+.campaign-collected,
+.campaign-deadline {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.campaign-collected span {
+  font-weight: bold;
+  color: #0CBF65;
+  margin-left: 5px;
+}
+
+.campaign-deadline span {
+  margin-left: 5px;
+  color: #777;
+}
+
+
+
+
     
     /* Testimony */
     .testimony {
@@ -526,10 +619,85 @@
     
   
     <!-- Flagship Program -->
-    <div class="flagship-program">
-      <h2>Our Flagship Program</h2>
-      <p>Our flagship program is designed to help businesses achieve their goals by providing them with the tools and resources they need to succeed. With our program, you'll be able to grow your business and increase your revenue.</p>
+    <div class="card-container">
+      <div class="campaign-card">
+        <div class="campaign-image">
+          <img src="campaign-image.jpg" alt="Campaign Image">
+        </div>
+        <div class="campaign-info">
+          <p class="campaign-datetime">10 April 2023, 10:00 AM</p>
+          <h2 class="campaign-title">Campaign Title</h2>
+          <p class="campaign-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra luctus mauris a bibendum.</p>
+          <div class="campaign-progress">
+            <div class="progress-bar" style="width: 60%;">
+              <div class="progress-fill"></div>
+            </div>
+            <div class="campaign-details">
+              <p class="campaign-collected"><span>Rp 3.500.000</span></p>
+              <p class="campaign-deadline"><span>15 hari lagi</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="campaign-card">
+        <div class="campaign-image">
+          <img src="campaign-image.jpg" alt="Campaign Image">
+        </div>
+        <div class="campaign-info">
+          <p class="campaign-datetime">10 April 2023, 10:00 AM</p>
+          <h2 class="campaign-title">Campaign Title</h2>
+          <p class="campaign-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra luctus mauris a bibendum.</p>
+          <div class="campaign-progress">
+            <div class="progress-bar" style="width: 60%;">
+              <div class="progress-fill"></div>
+            </div>
+            <div class="campaign-details">
+              <p class="campaign-collected"><span>Rp 3.500.000</span></p>
+              <p class="campaign-deadline"><span>15 hari lagi</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="campaign-card">
+        <div class="campaign-image">
+          <img src="campaign-image.jpg" alt="Campaign Image">
+        </div>
+        <div class="campaign-info">
+          <p class="campaign-datetime">10 April 2023, 10:00 AM</p>
+          <h2 class="campaign-title">Campaign Title</h2>
+          <p class="campaign-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra luctus mauris a bibendum.</p>
+          <div class="campaign-progress">
+            <div class="progress-bar" style="width: 60%;">
+              <div class="progress-fill"></div>
+            </div>
+            <div class="campaign-details">
+              <p class="campaign-collected"><span>Rp 3.500.000</span></p>
+              <p class="campaign-deadline"><span>15 hari lagi</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="campaign-card">
+        <div class="campaign-image">
+          <img src="campaign-image.jpg" alt="Campaign Image">
+        </div>
+        <div class="campaign-info">
+          <p class="campaign-datetime">10 April 2023, 10:00 AM</p>
+          <h2 class="campaign-title">Campaign Title</h2>
+          <p class="campaign-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra luctus mauris a bibendum.</p>
+          <div class="campaign-progress">
+            <div class="progress-bar" style="width: 60%;">
+              <div class="progress-fill"></div>
+            </div>
+            <div class="campaign-details">
+              <p class="campaign-collected"><span>Rp 3.500.000</span></p>
+              <p class="campaign-deadline"><span>15 hari lagi</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+       
   
     <!-- Testimony -->
     <div class="testimony">
