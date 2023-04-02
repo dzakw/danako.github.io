@@ -22,6 +22,7 @@
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 100;
 }
 
 .nav > .nav-header {
@@ -60,6 +61,7 @@
   height: 40px;
   border: none;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .nav > .nav-links > button > i {
@@ -81,7 +83,7 @@
   display: none;
 }
 
-@media (max-width:600px) {
+@media (max-width:768px) {
   .nav {
     padding-left: 10px;
   }
@@ -147,26 +149,77 @@
 
     /* Banner */
     .banner {
-      height: 895px;
-      background-image: url('banner.jpg');
-      background-size: cover;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: #fff;
-      text-align: center;
-    }
-    
-    .banner h1 {
-      font-size: 72px;
-      margin-bottom: 30px;
-    }
-    
-    .banner p {
-      font-size: 24px;
-      margin-bottom: 50px;
-    }
+  height: 895px;
+  background-image: url('banner.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  text-align: center;
+  font-family: "dm sans";
+  position: relative;
+  }
+  
+  .banner h1 {
+    font-size: 72px;
+    margin-bottom: 30px;
+    color: #E9ECEB;
+    text-align: center;
+		max-width: 900px;
+		word-wrap: break-word;
+  }
+  
+  .banner p {
+    font-size: 24px;
+    margin-bottom: 50px;
+    color: #E9ECEB;
+  }
+
+  .highlight {
+			color: #79C121;
+		}
+  
+    .banner-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: #fff;
+  background-color: #79C121;
+  border-radius: 2em;
+  width: 15em;
+  height: 3em;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-right: 7em;
+  font-family: "dm sans";
+  transition: background-color 0.3s ease-in-out;
+}
+
+.banner-button:hover {
+  background-color: #456722;
+  color: #fff;
+}
+
+.banner-button:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 768px) {
+  .banner-button {
+    font-size: 0.8em;
+    padding: 0.5em 0.8em;
+    margin-right: 0.5em;
+  }
+}
     
     /* Why Choose Us */
     .why-choose-us {
@@ -317,8 +370,14 @@
   
     <!-- Banner -->
     <div class="banner">
-      <h1>Welcome to our Landing Page</h1>
-      <p>Learn more about our products and services</p>
+      <h1>
+        <span class="highlight">Lorem ipsum</span> dolor sit amet consectetur <span class="highlight">adipisicing</span> elit. 
+      </h1>
+        <p>Learn more about our products and services</p>
+        <div class="banner-buttons">
+          <button class="banner-button">Donasi Sekarang</button>
+          <button class="banner-button">Ajukan Campaign</button>
+        </div>
     </div>
   
     <!-- Why Choose Us -->
